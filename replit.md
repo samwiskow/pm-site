@@ -1,8 +1,8 @@
-# Alex Morgan Creative Director Portfolio
+# Sam Wiskow Product Manager Portfolio
 
 ## Overview
 
-This is a premium portfolio website for Alex Morgan, a Creative Director specializing in digital experiences. The application features a modern, responsive design built with React and TypeScript, showcasing work samples and providing a contact form for potential clients.
+This is a premium portfolio website for Sam Wiskow, a Product Manager specializing in strategic product development. The application features a modern, responsive design built with React and TypeScript, showcasing product achievements and providing a contact form for potential collaborators.
 
 ## System Architecture
 

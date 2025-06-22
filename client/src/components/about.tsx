@@ -41,8 +41,8 @@ export default function About() {
           {/* Portrait */}
           <motion.div variants={itemVariants}>
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000" 
-              alt="Professional portrait of Alex Morgan, Creative Director" 
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000" 
+              alt="Professional portrait of Sam Wiskow, Product Manager" 
               className="w-full h-[600px] object-cover rounded-2xl shadow-2xl"
             />
           </motion.div>
@@ -50,17 +50,17 @@ export default function About() {
           {/* Bio & Links */}
           <motion.div variants={itemVariants} className="lg:pt-16">
             <h3 className="text-3xl md:text-4xl font-light mb-8 tracking-tight">
-              Alex Morgan
+              Sam Wiskow
             </h3>
             <div className="text-lg md:text-xl font-light leading-relaxed text-gray-300 mb-12 space-y-6">
               <p>
-                With over a decade of experience in digital design, I've had the privilege of working with Fortune 500 companies and innovative startups alike.
+                With 8+ years of product management experience, I've led cross-functional teams to deliver products that users love and businesses depend on.
               </p>
               <p>
-                My approach combines strategic thinking with meticulous attention to detail, ensuring every pixel serves a purpose in the larger narrative.
+                My approach combines data-driven decision making with user empathy, ensuring every feature creates measurable value while solving real user problems.
               </p>
               <p>
-                Currently based in San Francisco, I lead design initiatives that push boundaries and challenge conventions in the digital space.
+                Currently based in Seattle, I specialize in scaling products from MVP to market leadership through strategic roadmapping and stakeholder alignment.
               </p>
             </div>
             

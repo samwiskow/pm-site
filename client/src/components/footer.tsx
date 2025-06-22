@@ -19,7 +19,7 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             className="text-gray-400 mb-6 md:mb-0"
           >
-            © 2024 Alex Morgan. All rights reserved.
+            © 2024 Sam Wiskow. All rights reserved.
           </motion.div>
           
           <motion.div 

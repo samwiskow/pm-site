@@ -21,8 +21,8 @@ export default function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none mb-8"
         >
-          CREATIVE<br/>
-          <span className="text-[#015FFC]">DIRECTOR</span>
+          PRODUCT<br/>
+          <span className="text-[#015FFC]">MANAGER</span>
         </motion.h1>
         
         <motion.p 
@@ -31,7 +31,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
           className="text-xl md:text-2xl font-light tracking-wide text-gray-200 mb-16"
         >
-          Crafting digital experiences that resonate
+          Building products that solve real problems
         </motion.p>
         
         <motion.div 

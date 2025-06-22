@@ -30,7 +30,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             onClick={() => scrollToSection('home')}
           >
-            AM
+            SW
           </motion.div>
           
           <div className="hidden md:flex items-center space-x-12 text-sm font-medium tracking-wide">
