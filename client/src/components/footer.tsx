@@ -32,7 +32,7 @@ export default function Footer() {
               <motion.a
                 key={label}
                 href={href}
-                className="text-gray-400 hover:text-[#015FFC] transition-colors"
+                className="text-gray-400 hover:text-[hsl(186,100%,69%)] transition-colors"
                 whileHover={{ scale: 1.2, y: -2 }}
                 whileTap={{ scale: 0.9 }}
                 initial={{ opacity: 0, y: 20 }}

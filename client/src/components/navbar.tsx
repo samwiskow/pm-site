@@ -38,7 +38,7 @@ export default function Navbar() {
               <motion.button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="hover:text-[#015FFC] transition-colors duration-300"
+                className="hover:text-[hsl(186,100%,69%)] transition-colors duration-300"
                 whileHover={{ y: -2 }}
                 whileTap={{ y: 0 }}
               >
@@ -50,7 +50,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <motion.button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-white hover:text-[#015FFC] transition-colors"
+              className="text-white hover:text-[hsl(186,100%,69%)] transition-colors"
               whileTap={{ scale: 0.95 }}
             >
               <Menu className="text-xl" />
@@ -71,7 +71,7 @@ export default function Navbar() {
                 <motion.button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className="text-left hover:text-[#015FFC] transition-colors duration-300 px-6 py-2"
+                  className="text-left hover:text-[hsl(186,100%,69%)] transition-colors duration-300 px-6 py-2"
                   whileHover={{ x: 10 }}
                 >
                   {item}

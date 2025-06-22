@@ -86,7 +86,7 @@ export default function Contact() {
             className="text-4xl md:text-5xl font-light tracking-tight mb-8"
           >
             Let's Create Something
-            <span className="text-[#015FFC] italic"> Amazing</span>
+            <span className="text-[hsl(186,100%,69%)] italic"> Amazing</span>
           </motion.h2>
           
           <motion.p 
@@ -109,7 +109,7 @@ export default function Contact() {
                 <Input
                   {...form.register('name')}
                   placeholder="Your Name"
-                  className="w-full bg-[var(--dark)] border-2 border-[var(--border-custom)] rounded-xl px-6 py-4 text-white placeholder-gray-500 focus:border-[#015FFC] focus:outline-none transition-colors font-light text-lg h-14"
+                  className="w-full bg-[var(--dark)] border-2 border-[var(--border-custom)] rounded-xl px-6 py-4 text-white placeholder-gray-500 focus:border-[hsl(186,100%,69%)] focus:outline-none transition-colors font-light text-lg h-14"
                 />
                 {form.formState.errors.name && (
                   <p className="text-red-400 text-sm mt-2">{form.formState.errors.name.message}</p>
@@ -124,7 +124,7 @@ export default function Contact() {
                   {...form.register('email')}
                   type="email"
                   placeholder="Your Email"
-                  className="w-full bg-[var(--dark)] border-2 border-[var(--border-custom)] rounded-xl px-6 py-4 text-white placeholder-gray-500 focus:border-[#015FFC] focus:outline-none transition-colors font-light text-lg h-14"
+                  className="w-full bg-[var(--dark)] border-2 border-[var(--border-custom)] rounded-xl px-6 py-4 text-white placeholder-gray-500 focus:border-[hsl(186,100%,69%)] focus:outline-none transition-colors font-light text-lg h-14"
                 />
                 {form.formState.errors.email && (
                   <p className="text-red-400 text-sm mt-2">{form.formState.errors.email.message}</p>
@@ -140,7 +140,7 @@ export default function Contact() {
                 {...form.register('message')}
                 placeholder="Tell me about your project..."
                 rows={6}
-                className="w-full bg-[var(--dark)] border-2 border-[var(--border-custom)] rounded-xl px-6 py-4 text-white placeholder-gray-500 focus:border-[#015FFC] focus:outline-none transition-colors font-light text-lg resize-none"
+                className="w-full bg-[var(--dark)] border-2 border-[var(--border-custom)] rounded-xl px-6 py-4 text-white placeholder-gray-500 focus:border-[hsl(186,100%,69%)] focus:outline-none transition-colors font-light text-lg resize-none"
               />
               {form.formState.errors.message && (
                 <p className="text-red-400 text-sm mt-2">{form.formState.errors.message.message}</p>
@@ -154,7 +154,7 @@ export default function Contact() {
               <Button
                 type="submit"
                 disabled={contactMutation.isPending}
-                className="bg-[#015FFC] hover:bg-blue-600 text-white font-medium py-4 px-12 rounded-xl transition-all duration-300 text-lg tracking-wide h-14"
+                className="bg-[hsl(186,100%,69%)] hover:bg-[hsl(186,85%,60%)] text-black font-medium py-4 px-12 rounded-xl transition-all duration-300 text-lg tracking-wide h-14"
               >
                 {contactMutation.isPending ? 'Sending...' : 'Send Message'}
               </Button>

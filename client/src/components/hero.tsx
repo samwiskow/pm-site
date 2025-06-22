@@ -22,7 +22,7 @@ export default function Hero() {
           className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none mb-8"
         >
           PRODUCT<br/>
-          <span className="text-[#015FFC]">MANAGER</span>
+          <span className="text-[hsl(186,100%,69%)]">MANAGER</span>
         </motion.h1>
         
         <motion.p 

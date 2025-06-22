@@ -73,7 +73,7 @@ export default function About() {
                 <motion.a
                   key={label}
                   href={href}
-                  className="inline-flex items-center text-[#015FFC] hover:text-white transition-colors group"
+                  className="inline-flex items-center text-[hsl(186,100%,69%)] hover:text-white transition-colors group"
                   whileHover={{ x: 5 }}
                   whileTap={{ scale: 0.95 }}
                 >

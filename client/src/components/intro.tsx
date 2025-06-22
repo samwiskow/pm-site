@@ -15,7 +15,7 @@ export default function Intro() {
         >
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight">
             I lead{' '}
-            <span className="italic text-[#015FFC]">strategic initiatives</span>{' '}
+            <span className="italic text-[hsl(186,100%,69%)]">strategic initiatives</span>{' '}
             that scale multi-tenant SaaS platforms for millions of users.
           </h2>
         </motion.div>

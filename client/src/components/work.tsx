@@ -90,7 +90,7 @@ export default function Work() {
                   </div>
                   <div className="p-8">
                     <motion.h3 
-                      className="text-2xl font-medium mb-3 group-hover:text-[#015FFC] transition-colors"
+                      className="text-2xl font-medium mb-3 group-hover:text-[hsl(186,100%,69%)] transition-colors"
                       whileHover={{ x: 5 }}
                     >
                       {project.title}
@@ -102,7 +102,7 @@ export default function Work() {
                       {project.tags.map((tag) => (
                         <span 
                           key={tag}
-                          className="text-xs bg-[#015FFC] bg-opacity-20 text-[#015FFC] px-3 py-1 rounded-full"
+                          className="text-xs bg-[hsl(186,100%,69%)] bg-opacity-20 text-[hsl(186,100%,69%)] px-3 py-1 rounded-full"
                         >
                           {tag}
                         </span>
