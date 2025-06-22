@@ -116,6 +116,7 @@ Changelog:
 - June 22, 2025. Initial setup
 - June 22, 2025. Updated portfolio content to reflect Sam Wiskow's actual GitLab experience as Principal Product Manager
 - June 22, 2025. Added GitHub Pages deployment configuration with static build support
+- June 22, 2025. Replaced placeholder image with actual photo (swiskow.jpeg) in about section
 
 ## User Preferences
 

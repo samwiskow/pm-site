@@ -41,7 +41,7 @@ export default function About() {
           {/* Portrait */}
           <motion.div variants={itemVariants}>
             <img 
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000" 
+              src="/images/swiskow.jpeg" 
               alt="Professional portrait of Sam Wiskow, Product Manager" 
               className="w-full h-[600px] object-cover rounded-2xl shadow-2xl"
             />
