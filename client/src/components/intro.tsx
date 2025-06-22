@@ -14,9 +14,9 @@ export default function Intro() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight">
-            I build products that turn{' '}
-            <span className="italic text-[#015FFC]">user insights</span>{' '}
-            into meaningful solutions that drive business growth.
+            I lead{' '}
+            <span className="italic text-[#015FFC]">strategic initiatives</span>{' '}
+            that scale multi-tenant SaaS platforms for millions of users.
           </h2>
         </motion.div>
       </div>

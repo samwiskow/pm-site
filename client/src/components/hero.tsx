@@ -31,7 +31,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
           className="text-xl md:text-2xl font-light tracking-wide text-gray-200 mb-32"
         >
-          Building products that solve real problems
+          Platform plays at GitLab
         </motion.p>
       </div>
       

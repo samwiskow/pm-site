@@ -54,13 +54,13 @@ export default function About() {
             </h3>
             <div className="text-lg md:text-xl font-light leading-relaxed text-gray-300 mb-12 space-y-6">
               <p>
-                With 8+ years of product management experience, I've led cross-functional teams to deliver products that users love and businesses depend on.
+                As Principal Product Manager at GitLab, I set strategy and direction for multi-tenant SaaS serving millions of developers worldwide.
               </p>
               <p>
-                My approach combines data-driven decision making with user empathy, ensuring every feature creates measurable value while solving real user problems.
+                I enable an organization of ~200 people to create and deliver strategic, cross-functional initiatives that generate measurable customer results and drive platform growth.
               </p>
               <p>
-                Currently based in Seattle, I specialize in scaling products from MVP to market leadership through strategic roadmapping and stakeholder alignment.
+                My focus spans from shaping roadmaps for internal Platform-as-a-Service solutions to leading large-scale cultural changes that improve customer outcomes across the organization.
               </p>
             </div>
             

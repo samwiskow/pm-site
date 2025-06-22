@@ -101,6 +101,7 @@ This is a premium portfolio website for Sam Wiskow, a Product Manager specializi
 
 Changelog:
 - June 22, 2025. Initial setup
+- June 22, 2025. Updated portfolio content to reflect Sam Wiskow's actual GitLab experience as Principal Product Manager
 
 ## User Preferences
 

@@ -4,24 +4,24 @@ import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
 const projects = [
   {
     id: 1,
-    title: 'SaaS Analytics Platform',
-    description: 'Led product strategy and roadmap for a B2B analytics platform that increased user retention by 40% and reduced churn by 25%.',
+    title: 'GitLab.com Multi-Tenant SaaS',
+    description: 'Set strategy and direction for GitLab.com serving millions of developers. Led cross-functional initiatives across ~200 person organization generating measurable customer results.',
     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
-    tags: ['B2B SaaS', 'Analytics']
+    tags: ['SaaS Strategy', 'DevOps Platform']
   },
   {
     id: 2,
-    title: 'Mobile Banking App',
-    description: 'Managed cross-functional team to launch mobile-first banking features, driving 60% adoption rate within 6 months.',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
-    tags: ['FinTech', 'Mobile']
+    title: 'Runway - Internal PaaS',
+    description: 'Shaped roadmap and strategy for GitLab\'s internal Platform-as-a-Service that now powers AI services, Duo with Amazon Q, and GCP integration.',
+    image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
+    tags: ['Platform Strategy', 'AI Infrastructure']
   },
   {
     id: 3,
-    title: 'Marketplace Platform',
-    description: 'Scaled marketplace from startup to $50M ARR through strategic feature prioritization and data-driven experimentation.',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
-    tags: ['Marketplace', 'Growth']
+    title: 'Multi-Region Services',
+    description: 'Delivered GitLab\'s first multi-region services to meet customers globally. Led cultural change initiatives reducing breaking changes year-over-year.',
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
+    tags: ['Global Scale', 'Process Innovation']
   }
 ];
 
