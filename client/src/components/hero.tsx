@@ -29,30 +29,31 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-          className="text-xl md:text-2xl font-light tracking-wide text-gray-200 mb-16"
+          className="text-xl md:text-2xl font-light tracking-wide text-gray-200 mb-32"
         >
           Building products that solve real problems
         </motion.p>
-        
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.8 }}
-          className="absolute bottom-12 left-1/2 transform -translate-x-1/2 cursor-pointer"
-          onClick={scrollToNext}
-        >
-          <div className="flex flex-col items-center text-gray-300 hover:text-white transition-colors">
-            <span className="text-xs font-medium tracking-widest mb-4 uppercase">Scroll</span>
-            <div className="w-6 h-10 border-2 border-gray-300 rounded-full relative">
-              <motion.div 
-                className="w-1 h-3 bg-gray-300 rounded-full absolute top-2 left-1/2 transform -translate-x-1/2"
-                animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              />
-            </div>
-          </div>
-        </motion.div>
       </div>
+      
+      {/* Scroll Indicator - positioned outside the content container */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.8 }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer z-20"
+        onClick={scrollToNext}
+      >
+        <div className="flex flex-col items-center text-gray-300 hover:text-white transition-colors">
+          <span className="text-xs font-medium tracking-widest mb-4 uppercase">Scroll</span>
+          <div className="w-6 h-10 border-2 border-gray-300 rounded-full relative">
+            <motion.div 
+              className="w-1 h-3 bg-gray-300 rounded-full absolute top-2 left-1/2 transform -translate-x-1/2"
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            />
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 }
