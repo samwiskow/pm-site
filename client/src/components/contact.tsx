@@ -5,11 +5,20 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { insertContactSubmissionSchema } from '@shared/schema';
 import { useMutation } from '@tanstack/react-query';
 import { apiRequest } from '@/lib/queryClient';
 import { useToast } from '@/hooks/use-toast';
-import type { InsertContactSubmission } from '@shared/schema';
+import { z } from 'zod';
+
+const isStaticBuild = import.meta.env.VITE_STATIC_BUILD === 'true';
+
+// Define schema inline for static builds
+const insertContactSubmissionSchema = z.object({
+  email: z.string().email(),
+  message: z.string().min(1)
+});
+
+type InsertContactSubmission = z.infer<typeof insertContactSubmissionSchema>;
 
 export default function Contact() {
   const { ref, isIntersecting } = useIntersectionObserver();
@@ -26,21 +35,39 @@ export default function Contact() {
 
   const contactMutation = useMutation({
     mutationFn: async (data: InsertContactSubmission) => {
-      const response = await apiRequest('POST', '/api/contact', data);
-      return response.json();
+      if (isStaticBuild) {
+        // For static builds, simulate form submission
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        return { success: true };
+      }
+      
+      if (!isStaticBuild) {
+        const response = await apiRequest('POST', '/api/contact', data);
+        return response.json();
+      }
+      return { success: true };
     },
     onSuccess: () => {
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
+      if (isStaticBuild) {
+        toast({
+          title: "Contact Information",
+          description: "Please email me directly at sam.wiskow@gmail.com",
+        });
+      } else {
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+      }
       form.reset();
     },
     onError: (error) => {
       toast({
-        title: "Error sending message",
-        description: "Please try again later.",
-        variant: "destructive",
+        title: isStaticBuild ? "Contact Information" : "Error sending message",
+        description: isStaticBuild 
+          ? "Please email me directly at sam.wiskow@gmail.com" 
+          : "Please try again later.",
+        variant: isStaticBuild ? "default" : "destructive",
       });
     }
   });

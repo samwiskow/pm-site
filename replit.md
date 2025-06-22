@@ -97,11 +97,25 @@ This is a premium portfolio website for Sam Wiskow, a Product Manager specializi
 - **Push Command**: `npm run db:push` applies schema changes
 - **Migration Files**: Generated in `./migrations` directory
 
+## Deployment Strategy
+
+### GitHub Pages Static Deployment
+- **Configuration**: GitHub Actions workflow (`.github/workflows/deploy.yml`)
+- **Build Process**: Vite static build configuration (`vite.config.static.ts`)
+- **Static Handling**: Contact form shows email fallback for static builds
+- **SPA Support**: 404.html redirect script for client-side routing
+- **Domain**: Custom domain support via CNAME file
+
+### Development vs Production
+- **Development**: Full-stack with backend API and database
+- **GitHub Pages**: Static frontend with contact form fallback to direct email
+
 ## Changelog
 
 Changelog:
 - June 22, 2025. Initial setup
 - June 22, 2025. Updated portfolio content to reflect Sam Wiskow's actual GitLab experience as Principal Product Manager
+- June 22, 2025. Added GitHub Pages deployment configuration with static build support
 
 ## User Preferences
 
