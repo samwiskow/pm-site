@@ -37,7 +37,10 @@ jobs:
           NODE_ENV: production
 
       - name: Run test
-        run: ls && ls client
+        run: ls client
+
+      - name: Run test client dist
+        run: ls client/dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
