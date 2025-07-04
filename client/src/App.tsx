@@ -1,5 +1,4 @@
 import { Switch, Route } from "wouter";
-import LocationProvider from "wouter/LocationProvider";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -9,8 +8,8 @@ import NotFound from "@/pages/not-found";
 
 function Router() {
   return (
-    <Switch base="/pm-site">
-      <Route path="/" component={Home} />
+    <Switch>
+      <Route path="/pm-site/" component={Home} />
       <Route component={NotFound} />
     </Switch>
   );
@@ -18,14 +17,12 @@ function Router() {
 
 function App() {
   return (
-    <LocationProvider base="/pm-site">
-      <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
-      </QueryClientProvider>
-    </LocationProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Router />
+      </TooltipProvider>
+    </QueryClientProvider>
   );
 }
 
