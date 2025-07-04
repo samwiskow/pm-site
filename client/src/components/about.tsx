@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
-import { Twitter, Linkedin, Mail } from 'lucide-react';
+import { Twitter, Linkedin, Briefcase } from 'lucide-react';
 
 export default function About() {
   const { ref, isIntersecting } = useIntersectionObserver();
@@ -66,9 +66,9 @@ export default function About() {
             
             <div className="flex flex-col sm:flex-row gap-6">
               {[
-                { Icon: Twitter, label: 'Twitter', href: '#' },
-                { Icon: Linkedin, label: 'LinkedIn', href: '#' },
-                { Icon: Mail, label: 'Newsletter', href: '#' }
+                { Icon: Twitter, label: 'Twitter', href: 'https://twitter.com/samwiskow' },
+                { Icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/sjwiskow/' },
+                { Icon: Briefcase, label: 'Work', href: 'https://gitlab.com/swiskow' }
               ].map(({ Icon, label, href }) => (
                 <motion.a
                   key={label}

@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
-import { Twitter, Linkedin, Globe, Briefcase } from 'lucide-react';
+import { Twitter, Linkedin, Briefcase } from 'lucide-react';
 
 export default function Footer() {
   const socialLinks = [
-    { Icon: Twitter, href: '#', label: 'Twitter' },
-    { Icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { Icon: Globe, href: '#', label: 'Dribbble' },
-    { Icon: Briefcase, href: '#', label: 'Behance' }
+    { Icon: Twitter, href: 'https://twitter.com/samwiskow', label: 'Twitter' },
+    { Icon: Linkedin, href: 'https://www.linkedin.com/in/sjwiskow/', label: 'LinkedIn' },
+    { Icon: Briefcase, href: 'https://gitlab.com/swiskow', label: 'GitLab' }
   ];
 
   return (
