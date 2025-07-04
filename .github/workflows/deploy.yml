@@ -38,7 +38,7 @@ jobs:
           NODE_ENV: production
 
       - name: Copy index.html to 404.html for SPA routing
-        run: cp dist/index.html dist/404.html
+        run: cp client/dist/index.html client/dist/404.html
 
       - name: Run test
         run: ls client
