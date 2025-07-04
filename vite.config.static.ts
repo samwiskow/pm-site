@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/",
+  base: "/pm-site/",
   build: {
     outDir: "dist",
     //emptyOutDir: true,
