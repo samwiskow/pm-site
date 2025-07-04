@@ -12,16 +12,18 @@ const projects = [
   {
     id: 2,
     title: 'Runway - Internal PaaS',
-    description: 'Shaped roadmap and strategy for GitLab\'s internal Platform-as-a-Service that now powers AI services, Duo with Amazon Q, and GCP integration.',
+    description: `Shaped roadmap and strategy for GitLab's internal Platform-as-a-Service that now powers AI services, Duo with Amazon Q, and GCP integration.\n\n▶️ Watch my talk: https://youtu.be/Iw-vj0dzH7Q?si=BELfrJKE_VIwp-nj&utm_source=MTQxZ`,
     image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
-    tags: ['Platform Strategy', 'AI Infrastructure']
+    tags: ['Platform Strategy', 'AI Infrastructure'],
+    link: 'https://youtu.be/Iw-vj0dzH7Q?si=BELfrJKE_VIwp-nj&utm_source=MTQxZ'
   },
   {
     id: 3,
     title: 'Multi-Region Services',
-    description: 'Delivered GitLab\'s first multi-region services to meet customers globally. Led cultural change initiatives reducing breaking changes year-over-year.',
+    description: `Delivered GitLab's first multi-region services to meet customers globally. Led cultural change initiatives reducing breaking changes year-over-year.\n\nRead my blog post: https://about.gitlab.com/blog/building-gitlab-with-gitlab-a-multi-region-service-to-deliver-ai-features/`,
     image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600',
-    tags: ['Global Scale', 'Process Innovation']
+    tags: ['Global Scale', 'Process Innovation'],
+    link: 'https://about.gitlab.com/blog/building-gitlab-with-gitlab-a-multi-region-service-to-deliver-ai-features/'
   }
 ];
 
@@ -96,7 +98,23 @@ export default function Work() {
                       {project.title}
                     </motion.h3>
                     <p className="text-gray-400 leading-relaxed mb-4">
-                      {project.description}
+                      {project.description.split('\n').map((line, i) => {
+                        if (project.link && line.includes('Watch my talk')) {
+                          return (
+                            <span key={i}>
+                              ▶️ <a href={project.link} target="_blank" rel="noopener noreferrer" className="underline text-[hsl(186,100%,69%)] hover:text-white">Watch my talk</a>
+                            </span>
+                          );
+                        }
+                        if (project.link && line.includes('Read my blog post')) {
+                          return (
+                            <span key={i}>
+                              📖 <a href={project.link} target="_blank" rel="noopener noreferrer" className="underline text-[hsl(186,100%,69%)] hover:text-white">Read my blog post</a>
+                            </span>
+                          );
+                        }
+                        return <span key={i}>{line}<br/></span>;
+                      })}
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag) => (
