@@ -4,7 +4,7 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
-  base: '/pm-site/', // Set this to your repo name
+  base: '/',
   plugins: [
     react(),
     runtimeErrorOverlay(),
